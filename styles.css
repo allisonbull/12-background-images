@@ -1,0 +1,170 @@
+/* ---------- Colors (the only custom properties) ---------- */
+:root {
+    --orange: #f5934a;
+    --blue: #1d93bb;
+    --mint: #bfe8e2;
+    --cream: #fdf9ee;
+    --red-orange: #e8604c;
+    --chip-fill: #fdeedd;
+    --chip-border: #f9d9b8;
+    --text: #333333;
+    --white: #ffffff;
+}
+
+/* ---------- Page ---------- */
+body {
+    margin: 0;
+    background-color: var(--mint);
+    background-image: url("images/pattern.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    line-height: 38px;
+    color: var(--text);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    background-color: var(--orange);
+    border-bottom: 4px solid var(--blue);
+    padding: 40px 0 20px 0;
+}
+
+.header-content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.site-title {
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    color: var(--white);
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0 18px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* ---------- Hero banner ---------- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 590px;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid var(--blue);
+}
+
+.hero-title {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+/* ---------- Main card ---------- */
+.card {
+    width: 725px;
+    margin: 50px auto 0 auto;
+    padding: 50px;
+    background-color: var(--cream);
+}
+
+.card-title {
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 60px;
+    color: var(--blue);
+}
+
+.card-subtitle {
+    margin: 0 0 25px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--chip-border);
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red-orange);
+}
+
+.card-text {
+    margin: 0 0 20px 0;
+}
+
+.chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.code-chip {
+    padding: 2px 8px;
+    background-color: var(--chip-fill);
+    border: 1px solid var(--chip-border);
+    border-radius: 3px;
+    font-family: "Inconsolata", monospace;
+    font-size: 19px;
+    color: var(--red-orange);
+}
+
+.text-link {
+    color: var(--blue);
+}
+
+/* ---------- Wrap-up box ---------- */
+.wrap-up {
+    width: 725px;
+    margin: 37px auto 100px auto;
+    padding: 40px 50px;
+    background-color: var(--blue);
+    border-left: 6px solid var(--orange);
+}
+
+.wrap-up-title {
+    margin: 0 0 10px 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    color: var(--white);
+}
+
+.wrap-up-text {
+    margin: 0;
+    color: var(--white);
+}
